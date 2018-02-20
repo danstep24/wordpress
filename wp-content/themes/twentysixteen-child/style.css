@@ -1,8 +1,15 @@
 /*
  Theme Name:   My Child Theme
- Author:       John Doe
+ Author:       Daniel Stephenson
  Description:  This is the first theme created by John a
 child theme of WordPress' Twenty Seventeen theme
  Template:     twentysixteen
 */
  
+ .post-20 p.lead {
+ 	color: red;
+ }
+
+.page-template-templatestest-page-php .inner-page {
+	background-color: green;
+ }

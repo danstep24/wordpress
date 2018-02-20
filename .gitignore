@@ -114,4 +114,4 @@ wp-content/plugins/*
 # ignore everything in the "themes" directory,
 wp-content/themes/*
 # except our custom theme
-!wp-content/themes/twentysixteen-child/
+!wp-content/themes/dan/
