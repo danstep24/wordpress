@@ -1,1 +1,34 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+p.lead {
+	color: red;
+}
+
+#homepage-background {
+  background:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/code.jpg);
+  color: red;
+  height: 700px;
+  .title {
+  	padding-top: 250px;
+  }
+  .btn-group button {
+  	margin: 10px
+  }
+
+} 
+
+#full-width-page-wrapper-home {
+  padding: 0px;
+}
+
+.full-width-head {
+	background-image: url("/img/code.jpg");
+}
+
+.skill-container {
+  text-align:center;
+}
+
+#logo {
+  max-width: 100px;
+  padding-bottom: 20px;
+}

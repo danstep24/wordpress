@@ -9474,6 +9474,31 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+p.lead {
+  color: red; }
+
+#homepage-background {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/code.jpg);
+  color: red;
+  height: 700px; }
+  #homepage-background .title {
+    padding-top: 250px; }
+  #homepage-background .btn-group button {
+    margin: 10px; }
+
+#full-width-page-wrapper-home {
+  padding: 0px; }
+
+.full-width-head {
+  background-image: url("/img/code.jpg"); }
+
+.skill-container {
+  text-align: center; }
+
+#logo {
+  max-width: 100px;
+  padding-bottom: 20px; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
