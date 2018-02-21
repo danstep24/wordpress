@@ -9499,6 +9499,14 @@ p.lead {
   max-width: 100px;
   padding-bottom: 20px; }
 
+#skills {
+  padding-top: 100px;
+  padding-bottom: 200px; }
+
+#skill-h1 {
+  padding-bottom: 50px;
+  text-align: center; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

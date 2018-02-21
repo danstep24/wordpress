@@ -41,19 +41,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="sections">
 		
-		// projects section
+		<!--// projects section
 
 
-	</div><!-- Container end -->
+	
 
 
 
 
-		// projects section
+		<!-- projects section
 
-		// projects wp_query --> DB get the projects CPT
+		// projects wp_query DB get the projects CPT --> 
 		
-		<div class="container">
+		<div class="container" id="skills">
+			<h1 id="skill-h1">Skills</h1>	
+
 			<div class="row">
 				<?php $skills_query = new WP_Query( array( 'post_type' => 'skills' ) ); ?>
 		
@@ -65,7 +67,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 
-		// new loop, go through projects
+		<!--// new loop, go through projects
 
 		// use new template get_template_part( 'loop-templates/projects-section' );
 
@@ -73,16 +75,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		// skills section
 
-		// skills wp_query --> DB get the skills CPT
+		// skills wp_query DB get the skills CPT
 
 		// new loop, go through skills
 
-		// use new template get_template_part( 'loop-templates/skills-section' );
+		// use new template get_template_part( 'loop-templates/skills-section' ); --> 
 
 
 
-
-		?>
 	</div>
 
 </div><!-- Wrapper end -->

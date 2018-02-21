@@ -7,8 +7,9 @@
 ?>
 <div class="col-sm">
 
+
 <div class="skill-container"> 
-	
+
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 		<?php if (get_field('skill_logo')) { ?>
