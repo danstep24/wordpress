@@ -78,13 +78,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<!-- Contact section -->
 
 		<div class="container" id="contact">
-			<h1 id="skill-h1">Contact</h1>	
-
-			<div class="row">
+			<h1 id="contact-h1">Contact</h1>	
 						
-				<?php get_template_part( 'loop-templates/content', 'contact' ); ?>
+				<?php get_template_part( 'page-templates/contact-page' ); ?>
 			
-			</div>
 		</div>
 
 

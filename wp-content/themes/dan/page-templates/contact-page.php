@@ -21,25 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<main class="site-main" id="main" role="main">
 
-					<?php while ( have_posts() ) : the_post(); ?>
-
-						<?php get_template_part( 'loop-templates/content', 'page' ); ?>
-
-						<?php
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-
-							comments_template();
-
-						endif;
-						?>
-
-					<?
-  					if (get_field('phone')) { ?>
-				    <h2> <?php the_field('phone')?> </h2>
-				<?php } ?> 	
-
-					<?php endwhile; // end of the loop. ?>
+					<?php echo do_shortcode("[contact-form-7 id='78']"); ?>
 
 				</main><!-- #main -->
 
