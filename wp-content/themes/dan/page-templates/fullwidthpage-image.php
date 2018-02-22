@@ -41,17 +41,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="sections">
 		
-		<!--// projects section
-
-
+		<!--/projects section-->
 	
+		<div class="container" id="projects">
+			<h1 id="skill-h1">Project</h1>	
+
+			<div class="card-deck">
+				<?php $project_query = new WP_Query( array( 'post_type' => 'projects' ) ); ?>
+				
+				<?php while ($project_query -> have_posts() ) :$project_query -> the_post();  ?>
+				
+				<?php get_template_part( 'loop-templates/content', 'project' ); ?>
+			
+				<?php endwhile; // end of the loop. ?>
+			</div>
+		</div>
 
 
-
-
-		<!-- projects section
-
-		// projects wp_query DB get the projects CPT --> 
+		<!-- Skill section --> 
 		
 		<div class="container" id="skills">
 			<h1 id="skill-h1">Skills</h1>	
@@ -67,19 +74,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 
-		<!--// new loop, go through projects
+		
+		<!-- Contact section -->
 
-		// use new template get_template_part( 'loop-templates/projects-section' );
-
-
-
-		// skills section
-
-		// skills wp_query DB get the skills CPT
-
-		// new loop, go through skills
-
-		// use new template get_template_part( 'loop-templates/skills-section' ); --> 
+		<div class="container" id="contact">
+			<h1 id="contact-h1">Contact</h1>	
+						
+				<?php get_template_part( 'page-templates/contact-page' ); ?>
+			
+		</div>
 
 
 

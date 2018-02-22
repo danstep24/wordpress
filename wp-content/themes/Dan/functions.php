@@ -4,22 +4,22 @@
  *
  * @package understrap
  */
-function case_studies() {
+function projects() {
 	$labels = array(
-	'name' => 'Case Studies',
-         'singular_name' => 'Case',
+	'name' => 'Projects',
+         'singular_name' => 'Project',
          'add_new' => 'Add New',
-         'add_new_item' => 'Add New Case',
-         'edit_item' => 'Edit Case',
-         'new_item' => 'New Case',
-         'view_item' => 'View Case',
-         'search_items' => 'Search Case',
-         'not_found' => 'No case found',
-         'not_found_in_trash' => 'No case found in Trash',
+         'add_new_item' => 'Add New Project',
+         'edit_item' => 'Edit Project',
+         'new_item' => 'New Project',
+         'view_item' => 'View Project',
+         'search_items' => 'Search Project',
+         'not_found' => 'No Project found',
+         'not_found_in_trash' => 'No Project found in Trash',
          'parent_item_colon' => '',
      );
      $args = array(
-		'label' => __('case'),
+		'label' => __('Project'),
 		'labels' => $labels, // from array above
 		'public' => true,
 		'can_export' => true,
@@ -28,18 +28,18 @@ function case_studies() {
 		'capability_type' => 'post',
 		'menu_icon' => 'dashicons-welcome-add-page', // from this list
 		'hierarchical' => false,
-		'rewrite' => array( "slug" => "case" ), // defines URL base 'supports'=> array('title', 'thumbnail', 'editor', 'excerpt'), 'show_in_nav_menus' => true,
+		'rewrite' => array( "slug" => "Project" ), // defines URL base 'supports'=> array('title', 'thumbnail', 'editor', 'excerpt'), 'show_in_nav_menus' => true,
 		'taxonomies' => array( 'case_category', 'post_tag')// own categories
 		);
-	register_post_type('case-studies', $args);// used as internal identifier
+	register_post_type('projects', $args);// used as internal identifier
 }
 
-add_action('init','case_studies'); 
+add_action('init','projects'); 
 
 
 function skills() {
 	$labels = array(
-	'name' => 'skills',
+	'name' => 'Skills',
          'singular_name' => 'skills',
          'add_new' => 'Add New',
          'add_new_item' => 'Add New Skill',
