@@ -38,13 +38,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div><!-- Container end -->
 
 	</div>
-
+</div>
 	<div class="<?php echo esc_attr( $container ); ?>" id="sections">
 		
 		<!--/projects section-->
 	
 		<div class="container" id="projects">
-			<h1 id="skill-h1">Project</h1>	
+			<h1 id="skill-h1">Recent Work</h1>	
 
 			<div class="card-deck">
 				<?php $project_query = new WP_Query( array( 'post_type' => 'projects' ) ); ?>
@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 
-
+	</div>
 		<!-- Skill section --> 
 		
 		<div class="container" id="skills">
@@ -76,18 +76,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		
 		<!-- Contact section -->
-
-		<div class="container" id="contact">
-			<h1 id="contact-h1">Contact</h1>	
-						
-				<?php get_template_part( 'page-templates/contact-page' ); ?>
-			
+		<div id="contact-background">
+			<div class="container" id="contact">
+				<h1 id="contact-h1">Contact</h1>	
+							
+					<?php get_template_part( 'page-templates/contact-page' ); ?>
+				
+			</div>
 		</div>
 
 
-
-	</div>
-
-</div><!-- Wrapper end -->
-
-<?php get_footer(); ?>
+<div>
+	<?php get_footer(); ?>
+</div>
