@@ -20,9 +20,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
-
-					<?php echo do_shortcode("[contact-form-7 id='78']"); ?>
-
+					<div class="contact-form">
+						<h1 id="contact-h1">Contact</h1>
+						<?php echo do_shortcode("[contact-form-7 id='78']"); ?>
+					</div>
 				</main><!-- #main -->
 
 			</div><!-- #primary -->

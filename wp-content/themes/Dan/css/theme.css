@@ -9477,10 +9477,14 @@ a.skip-link {
 p.lead {
   color: red; }
 
+video#bgvid {
+  position: fixed;
+  height: 100%;
+  z-index: -100;
+  background-size: 100%; }
+
 #homepage-background {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/code.jpg);
-  color: red;
-  height: 900px; }
+  height: 700px; }
   #homepage-background .title {
     padding-top: 250px;
     animation: slide-up-fade-in ease 3s; }
@@ -9488,13 +9492,13 @@ p.lead {
     margin: 10px; }
 
 #contact-background {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/code2.jpg); }
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+
+.contact-form {
+  color: white; }
 
 #full-width-page-wrapper-home {
   padding: 0px; }
-
-.full-width-head {
-  background-image: url("/img/code.jpg"); }
 
 .skill-container {
   text-align: center; }
@@ -9506,6 +9510,12 @@ p.lead {
 #skills, #projects, #contact {
   padding-top: 100px;
   padding-bottom: 50px; }
+
+.projects-background {
+  background-color: #F9F9F9; }
+
+.skills-background {
+  background-color: white; }
 
 #skill-h1 {
   padding-bottom: 50px;
@@ -9542,7 +9552,8 @@ p.lead {
 .card-overlay:hover .entry-content {
   animation: slide-up-fade-in ease 1s;
   color: white;
-  padding-top: 15%; }
+  padding: 5px;
+  padding-top: 13%; }
 
 .card-content {
   opacity: 1; }

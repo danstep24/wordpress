@@ -3,10 +3,21 @@ p.lead {
 	color: red;
 }
 
+video#bgvid { 
+    position: fixed;
+    height: 100%;
+    z-index: -100;
+    // -ms-transform: translateX(-50%) translateY(-50%);
+    // -moz-transform: translateX(-50%) translateY(-50%);
+    // -webkit-transform: translateX(-50%) translateY(-50%);
+    // transform: translateX(-50%) translateY(-50%);
+    background-size: 100%; 
+}
+
 #homepage-background {
-  background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/code.jpg);
-  color: red;
-  height: 900px;
+  // background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/code.jpg);
+  // color: red;
+   height: 700px;
 
   .title {
   	padding-top: 250px;
@@ -20,8 +31,11 @@ p.lead {
 } 
 
 #contact-background {
-  background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/code2.jpg);
-
+  background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+// ,url(../img/code2.jpg)
+}
+.contact-form {
+  color: white;
 }
 
 #full-width-page-wrapper-home {
@@ -29,7 +43,7 @@ p.lead {
 }
 
 .full-width-head {
-	background-image: url("/img/code.jpg");
+	// background-image: url("/img/code.jpg");
 }
 
 .skill-container {
@@ -46,8 +60,16 @@ p.lead {
 
 }
 
+.projects-background {
+  background-color: #F9F9F9;
+}
+
+.skills-background {
+  background-color: white;
+}
+
 #skills {
-  // background-color: blue;
+  // background-color: blues;
 }
 
 #skill-h1 {
@@ -95,7 +117,8 @@ p.lead {
 .card-overlay:hover .entry-content {
     animation: slide-up-fade-in ease 1s;
     color: white;
-    padding-top: 15%;
+    padding: 5px;
+    padding-top: 13%;
 }
 
 
