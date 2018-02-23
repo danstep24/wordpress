@@ -9477,19 +9477,21 @@ a.skip-link {
 p.lead {
   color: red; }
 
+#homepage-background {
+  height: 700px; }
+
 video#bgvid {
   position: fixed;
   height: 100%;
   z-index: -100;
   background-size: 100%; }
 
-#homepage-background {
-  height: 700px; }
-  #homepage-background .title {
-    padding-top: 250px;
-    animation: slide-up-fade-in ease 3s; }
-  #homepage-background .btn-group button {
-    margin: 10px; }
+.title {
+  padding-top: 250px;
+  animation: slide-up-fade-in ease 3s; }
+
+.btn-group button {
+  margin: 10px; }
 
 #contact-background {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
